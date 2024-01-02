@@ -1,6 +1,11 @@
 #include <iostream>
+#include "playingField.cpp"
+
 
 int main() {
-    std::cout << "Hello, Marek" << std::endl;
+    PlayingField playingField;
+    std::cout << playingField.printBoard();
     return 0;
+
+
 }
