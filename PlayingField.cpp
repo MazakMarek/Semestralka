@@ -29,6 +29,8 @@ public:
 
 class PlayingField {
 private:
+    bool gameEnd = true;
+
     std::vector<Body> snake1;
     std::vector<Body> snake2;
 
@@ -75,7 +77,7 @@ public:
             board[rows - 1][i] = '-';
         }
 
-        for (Body body:snake1) { // vykreslenie hada1
+        for (Body body:snake1) { // inicializacia hada1
             board[body.getX()][body.getY()] = snake1Text;
         }
 
@@ -96,6 +98,85 @@ public:
         }
     }
 
+    void posunHada2() {
+        int smerX = 0;
+        int smerY = 0;
+        switch (this->smer2) {
+
+            case 'a': smerY = -1;
+                break;
+            case 'd': smerY = +1;
+                break;
+            case 's': smerX = +1;
+                break;
+            case 'w': smerX = -1;
+                break;
+            default: ;;
+                break;
+        }
+
+        int predosleX;
+        int predosleY;
+        bool posunPrvy = true;
+        for (Body body:this->snake2) {
+            if (posunPrvy) {
+                predosleX = body.getX();
+                predosleY = body.getY();
+                body.setX(smerX);
+                body.setY(smerY);
+                posunPrvy = false;
+                if (board[body.getX()][body.getY()] != ' ') {
+                    this->gameEnd = false;
+                }
+            } else {
+                predosleX = body.getX();
+                predosleY = body.getY();
+                body.setX(predosleX);
+                body.setY(predosleY);
+            }
+        }
+    }
+
+
+
+    void posunHada1() {
+        int smerX = 0;
+        int smerY = 0;
+        switch (this->smer1) {
+
+            case 'a': smerY = -1;
+                break;
+            case 'd': smerY = +1;
+                break;
+            case 's': smerX = +1;
+                break;
+            case 'w': smerX = -1;
+                break;
+            default: ;;
+                break;
+        }
+        int predosleX;
+        int predosleY;
+        bool posunPrvy = true;
+        for (Body body:this->snake1) {
+            if (posunPrvy) {
+                predosleX = body.getX();
+                predosleY = body.getY();
+                body.setX(smerX);
+                body.setY(smerY);
+                posunPrvy = false;
+                if (board[body.getX()][body.getY()] != ' ' && board[body.getX()][body.getY()] != '#') {
+                    this->gameEnd = false;
+                }
+            } else {
+                predosleX = body.getX();
+                predosleY = body.getY();
+                body.setX(predosleX);
+                body.setY(predosleY);
+            }
+        }
+    }
+
     std::string printBoard() const {
         std::string result;
         for (int i = 0; i < rows; i++) {
@@ -107,4 +188,5 @@ public:
         }
         return result;
     }
+
 };
