@@ -137,8 +137,6 @@ public:
         }
     }
 
-
-
     void posunHada1() {
         int smerX = 0;
         int smerY = 0;
@@ -176,7 +174,6 @@ public:
             }
         }
     }
-
     std::string printBoard() const {
         std::string result;
         for (int i = 0; i < rows; i++) {
@@ -188,5 +185,4 @@ public:
         }
         return result;
     }
-
 };
