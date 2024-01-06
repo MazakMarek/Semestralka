@@ -1,8 +1,11 @@
 //
 // Created by pc on 02/01/2024.
 //
+#include <chrono>
 #include "server.h"
+using namespace std::chrono;
 
+Server::Server() {}
 
 void Server::startServer(){
     // inicializaciu Win socketov
@@ -18,6 +21,7 @@ void Server::startServer(){
         std::cerr << "Chyba pri vytváraní soketu." << std::endl;
         exit(EXIT_FAILURE);
     }
+
     //Nastavenie adresy a portu
     cisloPortu = 8008; //Vyber portu
     sockaddr_in serverAddress;
@@ -26,7 +30,7 @@ void Server::startServer(){
     serverAddress.sin_port = htons(cisloPortu);
 
     if (bind(serverSocket, (struct sockaddr*)&serverAddress, sizeof(serverAddress)) == SOCKET_ERROR) {
-        std::cerr << "Chyba pri viazaní socketu na adresu." << std::endl;
+        std::cerr << "Chyba pri viazani socketu na adresu." << std::endl;
         closesocket(serverSocket);
         WSACleanup();
         exit(EXIT_FAILURE);
@@ -38,31 +42,55 @@ void Server::startServer(){
         WSACleanup();
         return;
     }
-    std::cout << "Server beží a pocuva na porte " << cisloPortu << std::endl;
+    std::cout << "Server bezi a pocuva na porte " << cisloPortu << std::endl;
+
 }
 
+int Server::getServerSocket() {
+    return this->serverSocket;
+}
+
+std::string Server::handleClient(SOCKET clientSocket) {
 
 
-int main(int argc, char *argv[]){
+    // Set the desired waiting time
 
 
+    char buffer[1024];
+    int bytesRead;
+
+        // Receive data from the client
+        bytesRead = recv(clientSocket, buffer, sizeof(buffer), 0);
+
+        if (bytesRead <= 0) {
+            if (bytesRead == 0) {
+                return "Client disconnected."; // TODO prerobit to ku vsetkym vypisom
+
+            } else {
+                return "Nothing recievied";
+            }
+
+        }
 
 
+        // Print received message
+        buffer[bytesRead] = '\0';  // Null-terminate the received data
+        return std::string(buffer);
 
-    //priradenie socketov
-    sockaddr_in clientAddress;
-    int clientSize = sizeof(clientAddress);
+//        // Send a response back to the client
+//        const char *responseMessage = "Hello from the server!";
+//        if (send(clientSocket, responseMessage, strlen(responseMessage), 0) == SOCKET_ERROR) {
+//            std::cerr << "Chyba pri odosielaní odpovede klientovi." << std::endl;
+//        }
 
-    SOCKET clientSocket = accept(serverSocket, (struct sockaddr*)&clientAddress, &clientSize);
-    if (clientSocket == INVALID_SOCKET) {
-        std::cerr << "Chyba pri prijímaní pripojenia." << std::endl;
-        closesocket(serverSocket);
-        WSACleanup();
-        return EXIT_FAILURE;
+
+//     Clean up
+//    closesocket(clientSocket);
+}
+
+void Server::sendMap(SOCKET clientSocket, std::string map) {
+    if (send(clientSocket, map.c_str(), map.size(), 0) == SOCKET_ERROR) {
+        std::cerr << "Chyba pri odosielaní odpovede klientovi." << std::endl;
     }
 
-    std::cout << "Pripojenie prijaté od klienta." << std::endl;
-    // ukoncenie Winsocketov
-    WSACleanup();
-    return EXIT_SUCCESS;
 }

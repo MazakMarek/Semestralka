@@ -25,6 +25,8 @@ public:
     void setY(int parY) {
         this->y = parY;
     }
+
+
 };
 
 class PlayingField {
@@ -47,6 +49,19 @@ private:
     int fruitX = 10, fruitY = 15;
 
 public:
+
+    char getSmer1(){
+        return smer1;
+    }
+
+    void setSmer1(char posun) {
+        smer1 = posun;
+    }
+
+    void setSmer2(char posun) {
+        smer2 = posun;
+    }
+
     PlayingField(){
         std::srand(static_cast<unsigned int>(std::time(0)));
 
@@ -122,8 +137,8 @@ public:
             if (posunPrvy) {
                 predosleX = body.getX();
                 predosleY = body.getY();
-                body.setX(smerX);
-                body.setY(smerY);
+                body.setX(predosleX + smerX);
+                body.setY(predosleY + smerY);
                 posunPrvy = false;
                 if (board[body.getX()][body.getY()] != ' ') {
                     this->gameEnd = false;
@@ -160,8 +175,8 @@ public:
             if (posunPrvy) {
                 predosleX = body.getX();
                 predosleY = body.getY();
-                body.setX(smerX);
-                body.setY(smerY);
+                body.setX(smerX + predosleX);
+                body.setY(smerY + predosleY);
                 posunPrvy = false;
                 if (board[body.getX()][body.getY()] != ' ' && board[body.getX()][body.getY()] != '#') {
                     this->gameEnd = false;

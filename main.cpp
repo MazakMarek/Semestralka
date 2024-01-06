@@ -3,11 +3,11 @@
 #include "SnakeGame.cpp"
 
 
-int main() {
-    PlayingField playingField;
-    std::cout << playingField.printBoard();
-    return 0;
-}
+//int main() {
+//    PlayingField playingField;
+//    std::cout << playingField.printBoard();
+//    return 0;
+//}
 
 #include <iostream>
 #include <conio.h> // alebo <curses.h> pre Linux

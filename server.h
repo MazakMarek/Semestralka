@@ -1,6 +1,6 @@
-//
-// Created by pc on 02/01/2024.
-//
+#ifndef UNTITLED1_SERVER_H
+#define UNTITLED1_SERVER_H
+
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
@@ -8,16 +8,17 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 
-#ifndef UNTITLED1_SERVER_H
-#define UNTITLED1_SERVER_H
 class Server{
 private:
     int serverSocket;
     int cisloPortu;
 
 public:
+    Server();
     void startServer();
-
+    int getServerSocket();
+    std::string handleClient(SOCKET clientSocket);
+    void sendMap(SOCKET clientSocket, std::string map);
 };
 
 

@@ -1,4 +1,10 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /tmp/tmp.uzi7rJ84FA -B /tmp/tmp.uzi7rJ84FA/cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: /tmp/tmp.uzi7rJ84FA/cmake-build-debug
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /tmp/tmp.vNgsjOL9wm -B /tmp/tmp.vNgsjOL9wm/cmake-build-debug
+CMake Error at CMakeLists.txt:9 (add_executable):
+  add_executable cannot create target "untitled1" because another target with
+  the same name already exists.  The existing target is an executable created
+  in source directory "/tmp/tmp.vNgsjOL9wm".  See documentation for policy
+  CMP0002 for more details.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/tmp/tmp.vNgsjOL9wm/cmake-build-debug/CMakeFiles/CMakeOutput.log".
