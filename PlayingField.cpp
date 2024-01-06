@@ -117,23 +117,17 @@ public:
         int smerX = 0;
         int smerY = 0;
         switch (this->smer2) {
-
-            case 'a': smerY = -1;
-                break;
-            case 'd': smerY = +1;
-                break;
-            case 's': smerX = +1;
-                break;
-            case 'w': smerX = -1;
-                break;
-            default: ;;
-                break;
+            case 'a': smerY = -1; break;
+            case 'd': smerY = +1; break;
+            case 's': smerX = +1; break;
+            case 'w': smerX = -1; break;
+            default: break;
         }
 
         int predosleX;
         int predosleY;
         bool posunPrvy = true;
-        for (Body body:this->snake2) {
+        for (Body& body : this->snake2) {
             if (posunPrvy) {
                 predosleX = body.getX();
                 predosleY = body.getY();
@@ -144,10 +138,12 @@ public:
                     this->gameEnd = false;
                 }
             } else {
-                predosleX = body.getX();
-                predosleY = body.getY();
+                int tempX = body.getX();
+                int tempY = body.getY();
                 body.setX(predosleX);
                 body.setY(predosleY);
+                predosleX = tempX;
+                predosleY = tempY;
             }
         }
     }
@@ -156,39 +152,37 @@ public:
         int smerX = 0;
         int smerY = 0;
         switch (this->smer1) {
-
-            case 'a': smerY = -1;
-                break;
-            case 'd': smerY = +1;
-                break;
-            case 's': smerX = +1;
-                break;
-            case 'w': smerX = -1;
-                break;
-            default: ;;
-                break;
+            case 'a': smerY = -1; break;
+            case 'd': smerY = +1; break;
+            case 's': smerX = +1; break;
+            case 'w': smerX = -1; break;
+            default: break;
         }
         int predosleX;
         int predosleY;
         bool posunPrvy = true;
-        for (Body body:this->snake1) {
+        for (Body& body : this->snake1) {
             if (posunPrvy) {
                 predosleX = body.getX();
                 predosleY = body.getY();
-                body.setX(smerX + predosleX);
-                body.setY(smerY + predosleY);
+                body.setX(predosleX + smerX);
+                body.setY(predosleY + smerY);
                 posunPrvy = false;
                 if (board[body.getX()][body.getY()] != ' ' && board[body.getX()][body.getY()] != '#') {
                     this->gameEnd = false;
                 }
             } else {
-                predosleX = body.getX();
-                predosleY = body.getY();
+                int tempX = body.getX();
+                int tempY = body.getY();
                 body.setX(predosleX);
                 body.setY(predosleY);
+                predosleX = tempX;
+                predosleY = tempY;
             }
         }
     }
+
+
     std::string printBoard() const {
         std::string result;
         for (int i = 0; i < rows; i++) {
