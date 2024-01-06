@@ -6,7 +6,7 @@
 #include <iostream>
 #include <winsock2.h>
 #include <ws2tcpip.h>
-#include "PlayingField.cpp"
+#include "PlayingField.h"
 #pragma comment (lib, "Ws2_32.lib")
 
 int main(int argc, char *argv[]){
@@ -77,16 +77,13 @@ int main(int argc, char *argv[]){
             std::cout << playingField.getSmer1();
             playingField.posunHada1();
             playingField.posunHada2();
+            playingField.makeField();
             server.sendMap(clientSocketPlayer1,playingField.printBoard());
             //  server.sendMap(clientSocketPlayer2,playingField.printBoard());
         }
-
     }
 //    server.handleClient(clientSocket);
     // ukoncenie Winsocketov
     WSACleanup();
     return EXIT_SUCCESS;
-
-
-
 }
