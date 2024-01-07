@@ -1,0 +1,1994 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.22621 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification could not be found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification could not be found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-9fl66i"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-9fl66i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-9fl66i
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_599ac\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_599ac.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_599ac.dir\\build
+        Building C object CMakeFiles/cmTC_599ac.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_599ac.dir\\CMakeCCompilerABI.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-9fl66i" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nmC704.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_599ac.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_599ac.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_599ac.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nmC753.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_599ac.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_599ac.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_599ac.dir/manifest.res CMakeFiles\\cmTC_599ac.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_599ac.dir\\objects1.rsp /out:cmTC_599ac.exe /implib:cmTC_599ac.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-9fl66i\\cmTC_599ac.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_599ac.dir/intermediate.manifest CMakeFiles\\cmTC_599ac.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_599ac.dir\\objects1.rsp /out:cmTC_599ac.exe /implib:cmTC_599ac.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-9fl66i\\cmTC_599ac.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_599ac.dir/intermediate.manifest CMakeFiles\\cmTC_599ac.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-9fl66i\\cmTC_599ac.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-321zrt"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-321zrt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-321zrt
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_c6992\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_c6992.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_c6992.dir\\build
+        Building C object CMakeFiles/cmTC_c6992.dir/testCCompiler.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_c6992.dir\\testCCompiler.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-321zrt" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nmC82C.tmp
+        testCCompiler.c
+        Linking C executable cmTC_c6992.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c6992.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c6992.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nmC86C.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_c6992.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_c6992.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_c6992.dir/manifest.res CMakeFiles\\cmTC_c6992.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c6992.dir\\objects1.rsp /out:cmTC_c6992.exe /implib:cmTC_c6992.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-321zrt\\cmTC_c6992.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c6992.dir/intermediate.manifest CMakeFiles\\cmTC_c6992.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c6992.dir\\objects1.rsp /out:cmTC_c6992.exe /implib:cmTC_c6992.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-321zrt\\cmTC_c6992.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c6992.dir/intermediate.manifest CMakeFiles\\cmTC_c6992.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-321zrt\\cmTC_c6992.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification could not be found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification could not be found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-dfggt7"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-dfggt7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-dfggt7
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_91388\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_91388.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_91388.dir\\build
+        Building C object CMakeFiles/cmTC_91388.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_91388.dir\\CMakeCCompilerABI.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-dfggt7" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nmCC69.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_91388.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_91388.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_91388.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nmCE7D.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_91388.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_91388.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_91388.dir/manifest.res CMakeFiles\\cmTC_91388.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_91388.dir\\objects1.rsp /out:cmTC_91388.exe /implib:cmTC_91388.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-dfggt7\\cmTC_91388.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_91388.dir/intermediate.manifest CMakeFiles\\cmTC_91388.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_91388.dir\\objects1.rsp /out:cmTC_91388.exe /implib:cmTC_91388.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-dfggt7\\cmTC_91388.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_91388.dir/intermediate.manifest CMakeFiles\\cmTC_91388.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-dfggt7\\cmTC_91388.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-7g3hnh"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-7g3hnh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-7g3hnh
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_3a490\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_3a490.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_3a490.dir\\build
+        Building C object CMakeFiles/cmTC_3a490.dir/testCCompiler.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_3a490.dir\\testCCompiler.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7g3hnh" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nmCF48.tmp
+        testCCompiler.c
+        Linking C executable cmTC_3a490.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_3a490.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_3a490.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nmCF97.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_3a490.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_3a490.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_3a490.dir/manifest.res CMakeFiles\\cmTC_3a490.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_3a490.dir\\objects1.rsp /out:cmTC_3a490.exe /implib:cmTC_3a490.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7g3hnh\\cmTC_3a490.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_3a490.dir/intermediate.manifest CMakeFiles\\cmTC_3a490.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_3a490.dir\\objects1.rsp /out:cmTC_3a490.exe /implib:cmTC_3a490.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7g3hnh\\cmTC_3a490.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_3a490.dir/intermediate.manifest CMakeFiles\\cmTC_3a490.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7g3hnh\\cmTC_3a490.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification could not be found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification could not be found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-7lv1pv"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-7lv1pv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-7lv1pv
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_bbbac\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_bbbac.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_bbbac.dir\\build
+        Building C object CMakeFiles/cmTC_bbbac.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_bbbac.dir\\CMakeCCompilerABI.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7lv1pv" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nmA088.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_bbbac.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_bbbac.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_bbbac.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nmA0E7.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_bbbac.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_bbbac.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_bbbac.dir/manifest.res CMakeFiles\\cmTC_bbbac.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_bbbac.dir\\objects1.rsp /out:cmTC_bbbac.exe /implib:cmTC_bbbac.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7lv1pv\\cmTC_bbbac.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_bbbac.dir/intermediate.manifest CMakeFiles\\cmTC_bbbac.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_bbbac.dir\\objects1.rsp /out:cmTC_bbbac.exe /implib:cmTC_bbbac.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7lv1pv\\cmTC_bbbac.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_bbbac.dir/intermediate.manifest CMakeFiles\\cmTC_bbbac.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7lv1pv\\cmTC_bbbac.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-8fzbsc"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-8fzbsc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-8fzbsc
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_67863\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_67863.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_67863.dir\\build
+        Building C object CMakeFiles/cmTC_67863.dir/testCCompiler.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_67863.dir\\testCCompiler.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-8fzbsc" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nmA192.tmp
+        testCCompiler.c
+        Linking C executable cmTC_67863.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_67863.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_67863.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nmA1E1.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_67863.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_67863.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_67863.dir/manifest.res CMakeFiles\\cmTC_67863.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_67863.dir\\objects1.rsp /out:cmTC_67863.exe /implib:cmTC_67863.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-8fzbsc\\cmTC_67863.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_67863.dir/intermediate.manifest CMakeFiles\\cmTC_67863.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_67863.dir\\objects1.rsp /out:cmTC_67863.exe /implib:cmTC_67863.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-8fzbsc\\cmTC_67863.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_67863.dir/intermediate.manifest CMakeFiles\\cmTC_67863.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-8fzbsc\\cmTC_67863.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-vq785h"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-vq785h"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-vq785h
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_6a5fa\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_6a5fa.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_6a5fa.dir\\build
+        Building C object CMakeFiles/cmTC_6a5fa.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_6a5fa.dir\\CMakeCCompilerABI.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-vq785h" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nmCBDA.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_6a5fa.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6a5fa.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6a5fa.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nmCD91.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_6a5fa.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_6a5fa.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_6a5fa.dir/manifest.res CMakeFiles\\cmTC_6a5fa.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6a5fa.dir\\objects1.rsp /out:cmTC_6a5fa.exe /implib:cmTC_6a5fa.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-vq785h\\cmTC_6a5fa.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_6a5fa.dir/intermediate.manifest CMakeFiles\\cmTC_6a5fa.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6a5fa.dir\\objects1.rsp /out:cmTC_6a5fa.exe /implib:cmTC_6a5fa.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-vq785h\\cmTC_6a5fa.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_6a5fa.dir/intermediate.manifest CMakeFiles\\cmTC_6a5fa.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-vq785h\\cmTC_6a5fa.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-9w8un6"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-9w8un6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-9w8un6
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_73112\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_73112.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_73112.dir\\build
+        Building C object CMakeFiles/cmTC_73112.dir/testCCompiler.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_73112.dir\\testCCompiler.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-9w8un6" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nmCEB9.tmp
+        testCCompiler.c
+        Linking C executable cmTC_73112.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_73112.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_73112.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nmCF27.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_73112.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_73112.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_73112.dir/manifest.res CMakeFiles\\cmTC_73112.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_73112.dir\\objects1.rsp /out:cmTC_73112.exe /implib:cmTC_73112.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-9w8un6\\cmTC_73112.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_73112.dir/intermediate.manifest CMakeFiles\\cmTC_73112.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_73112.dir\\objects1.rsp /out:cmTC_73112.exe /implib:cmTC_73112.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-9w8un6\\cmTC_73112.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_73112.dir/intermediate.manifest CMakeFiles\\cmTC_73112.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-9w8un6\\cmTC_73112.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-i63a2w"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-i63a2w"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-i63a2w
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_6a0cb\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_6a0cb.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_6a0cb.dir\\build
+        Building C object CMakeFiles/cmTC_6a0cb.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_6a0cb.dir\\CMakeCCompilerABI.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-i63a2w" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nm1D.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_6a0cb.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6a0cb.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6a0cb.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nm1A4.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_6a0cb.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_6a0cb.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_6a0cb.dir/manifest.res CMakeFiles\\cmTC_6a0cb.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6a0cb.dir\\objects1.rsp /out:cmTC_6a0cb.exe /implib:cmTC_6a0cb.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-i63a2w\\cmTC_6a0cb.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_6a0cb.dir/intermediate.manifest CMakeFiles\\cmTC_6a0cb.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6a0cb.dir\\objects1.rsp /out:cmTC_6a0cb.exe /implib:cmTC_6a0cb.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-i63a2w\\cmTC_6a0cb.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_6a0cb.dir/intermediate.manifest CMakeFiles\\cmTC_6a0cb.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-i63a2w\\cmTC_6a0cb.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-dw7bba"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-dw7bba"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-dw7bba
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_99b35\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_99b35.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_99b35.dir\\build
+        Building C object CMakeFiles/cmTC_99b35.dir/testCCompiler.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_99b35.dir\\testCCompiler.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-dw7bba" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nm29D.tmp
+        testCCompiler.c
+        Linking C executable cmTC_99b35.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_99b35.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_99b35.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nm2FC.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_99b35.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_99b35.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_99b35.dir/manifest.res CMakeFiles\\cmTC_99b35.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_99b35.dir\\objects1.rsp /out:cmTC_99b35.exe /implib:cmTC_99b35.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-dw7bba\\cmTC_99b35.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_99b35.dir/intermediate.manifest CMakeFiles\\cmTC_99b35.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_99b35.dir\\objects1.rsp /out:cmTC_99b35.exe /implib:cmTC_99b35.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-dw7bba\\cmTC_99b35.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_99b35.dir/intermediate.manifest CMakeFiles\\cmTC_99b35.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-dw7bba\\cmTC_99b35.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-qew2y6"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-qew2y6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-qew2y6
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_2b283\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_2b283.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_2b283.dir\\build
+        Building C object CMakeFiles/cmTC_2b283.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_2b283.dir\\CMakeCCompilerABI.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-qew2y6" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nm2F4B.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_2b283.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2b283.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2b283.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nm2FAA.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_2b283.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_2b283.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_2b283.dir/manifest.res CMakeFiles\\cmTC_2b283.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2b283.dir\\objects1.rsp /out:cmTC_2b283.exe /implib:cmTC_2b283.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-qew2y6\\cmTC_2b283.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2b283.dir/intermediate.manifest CMakeFiles\\cmTC_2b283.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2b283.dir\\objects1.rsp /out:cmTC_2b283.exe /implib:cmTC_2b283.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-qew2y6\\cmTC_2b283.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2b283.dir/intermediate.manifest CMakeFiles\\cmTC_2b283.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-qew2y6\\cmTC_2b283.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-5295hx"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-5295hx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-5295hx
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_25e02\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_25e02.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_25e02.dir\\build
+        Building C object CMakeFiles/cmTC_25e02.dir/testCCompiler.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_25e02.dir\\testCCompiler.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-5295hx" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nm3083.tmp
+        testCCompiler.c
+        Linking C executable cmTC_25e02.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_25e02.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_25e02.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nm30E2.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_25e02.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_25e02.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_25e02.dir/manifest.res CMakeFiles\\cmTC_25e02.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_25e02.dir\\objects1.rsp /out:cmTC_25e02.exe /implib:cmTC_25e02.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-5295hx\\cmTC_25e02.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_25e02.dir/intermediate.manifest CMakeFiles\\cmTC_25e02.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_25e02.dir\\objects1.rsp /out:cmTC_25e02.exe /implib:cmTC_25e02.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-5295hx\\cmTC_25e02.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_25e02.dir/intermediate.manifest CMakeFiles\\cmTC_25e02.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-5295hx\\cmTC_25e02.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-mp82xx"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-mp82xx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-mp82xx
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_99a4c\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_99a4c.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_99a4c.dir\\build
+        Building C object CMakeFiles/cmTC_99a4c.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_99a4c.dir\\CMakeCCompilerABI.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-mp82xx" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nmA03B.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_99a4c.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_99a4c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_99a4c.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nmA1D2.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_99a4c.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_99a4c.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_99a4c.dir/manifest.res CMakeFiles\\cmTC_99a4c.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_99a4c.dir\\objects1.rsp /out:cmTC_99a4c.exe /implib:cmTC_99a4c.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-mp82xx\\cmTC_99a4c.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_99a4c.dir/intermediate.manifest CMakeFiles\\cmTC_99a4c.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_99a4c.dir\\objects1.rsp /out:cmTC_99a4c.exe /implib:cmTC_99a4c.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-mp82xx\\cmTC_99a4c.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_99a4c.dir/intermediate.manifest CMakeFiles\\cmTC_99a4c.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-mp82xx\\cmTC_99a4c.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-0eh4tr"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-0eh4tr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-0eh4tr
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_56987\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_56987.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_56987.dir\\build
+        Building C object CMakeFiles/cmTC_56987.dir/testCCompiler.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_56987.dir\\testCCompiler.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-0eh4tr" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nmA2EA.tmp
+        testCCompiler.c
+        Linking C executable cmTC_56987.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_56987.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_56987.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nmA358.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_56987.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_56987.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_56987.dir/manifest.res CMakeFiles\\cmTC_56987.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_56987.dir\\objects1.rsp /out:cmTC_56987.exe /implib:cmTC_56987.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-0eh4tr\\cmTC_56987.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_56987.dir/intermediate.manifest CMakeFiles\\cmTC_56987.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_56987.dir\\objects1.rsp /out:cmTC_56987.exe /implib:cmTC_56987.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-0eh4tr\\cmTC_56987.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_56987.dir/intermediate.manifest CMakeFiles\\cmTC_56987.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-0eh4tr\\cmTC_56987.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-wdq8fk"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-wdq8fk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-wdq8fk
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_7b5d2\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_7b5d2.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_7b5d2.dir\\build
+        Building C object CMakeFiles/cmTC_7b5d2.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_7b5d2.dir\\CMakeCCompilerABI.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wdq8fk" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nm8D9F.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_7b5d2.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_7b5d2.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_7b5d2.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nm8F17.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_7b5d2.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_7b5d2.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_7b5d2.dir/manifest.res CMakeFiles\\cmTC_7b5d2.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_7b5d2.dir\\objects1.rsp /out:cmTC_7b5d2.exe /implib:cmTC_7b5d2.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wdq8fk\\cmTC_7b5d2.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_7b5d2.dir/intermediate.manifest CMakeFiles\\cmTC_7b5d2.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_7b5d2.dir\\objects1.rsp /out:cmTC_7b5d2.exe /implib:cmTC_7b5d2.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wdq8fk\\cmTC_7b5d2.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_7b5d2.dir/intermediate.manifest CMakeFiles\\cmTC_7b5d2.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wdq8fk\\cmTC_7b5d2.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-h4erdn"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-h4erdn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-h4erdn
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_6f19c\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_6f19c.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_6f19c.dir\\build
+        Building C object CMakeFiles/cmTC_6f19c.dir/testCCompiler.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_6f19c.dir\\testCCompiler.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-h4erdn" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nm9021.tmp
+        testCCompiler.c
+        Linking C executable cmTC_6f19c.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6f19c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6f19c.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nm908F.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_6f19c.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_6f19c.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_6f19c.dir/manifest.res CMakeFiles\\cmTC_6f19c.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6f19c.dir\\objects1.rsp /out:cmTC_6f19c.exe /implib:cmTC_6f19c.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-h4erdn\\cmTC_6f19c.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_6f19c.dir/intermediate.manifest CMakeFiles\\cmTC_6f19c.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6f19c.dir\\objects1.rsp /out:cmTC_6f19c.exe /implib:cmTC_6f19c.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-h4erdn\\cmTC_6f19c.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_6f19c.dir/intermediate.manifest CMakeFiles\\cmTC_6f19c.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-h4erdn\\cmTC_6f19c.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-1hquwk"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-1hquwk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-1hquwk
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_8a2bc\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_8a2bc.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_8a2bc.dir\\build
+        Building C object CMakeFiles/cmTC_8a2bc.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_8a2bc.dir\\CMakeCCompilerABI.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-1hquwk" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nmF823.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_8a2bc.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_8a2bc.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_8a2bc.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nmF890.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_8a2bc.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_8a2bc.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_8a2bc.dir/manifest.res CMakeFiles\\cmTC_8a2bc.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_8a2bc.dir\\objects1.rsp /out:cmTC_8a2bc.exe /implib:cmTC_8a2bc.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-1hquwk\\cmTC_8a2bc.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_8a2bc.dir/intermediate.manifest CMakeFiles\\cmTC_8a2bc.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_8a2bc.dir\\objects1.rsp /out:cmTC_8a2bc.exe /implib:cmTC_8a2bc.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-1hquwk\\cmTC_8a2bc.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_8a2bc.dir/intermediate.manifest CMakeFiles\\cmTC_8a2bc.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-1hquwk\\cmTC_8a2bc.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-r0ybl4"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-r0ybl4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-r0ybl4
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_0aed7\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_0aed7.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_0aed7.dir\\build
+        Building C object CMakeFiles/cmTC_0aed7.dir/testCCompiler.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_0aed7.dir\\testCCompiler.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-r0ybl4" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nmF99A.tmp
+        testCCompiler.c
+        Linking C executable cmTC_0aed7.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_0aed7.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_0aed7.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nmF9F9.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_0aed7.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_0aed7.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_0aed7.dir/manifest.res CMakeFiles\\cmTC_0aed7.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_0aed7.dir\\objects1.rsp /out:cmTC_0aed7.exe /implib:cmTC_0aed7.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-r0ybl4\\cmTC_0aed7.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_0aed7.dir/intermediate.manifest CMakeFiles\\cmTC_0aed7.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_0aed7.dir\\objects1.rsp /out:cmTC_0aed7.exe /implib:cmTC_0aed7.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-r0ybl4\\cmTC_0aed7.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_0aed7.dir/intermediate.manifest CMakeFiles\\cmTC_0aed7.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-r0ybl4\\cmTC_0aed7.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-1rbi34"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-1rbi34"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-1rbi34
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_f3c85\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_f3c85.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_f3c85.dir\\build
+        Building C object CMakeFiles/cmTC_f3c85.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_f3c85.dir\\CMakeCCompilerABI.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-1rbi34" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nm64F0.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_f3c85.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_f3c85.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_f3c85.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nm660A.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_f3c85.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_f3c85.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_f3c85.dir/manifest.res CMakeFiles\\cmTC_f3c85.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_f3c85.dir\\objects1.rsp /out:cmTC_f3c85.exe /implib:cmTC_f3c85.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-1rbi34\\cmTC_f3c85.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_f3c85.dir/intermediate.manifest CMakeFiles\\cmTC_f3c85.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_f3c85.dir\\objects1.rsp /out:cmTC_f3c85.exe /implib:cmTC_f3c85.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-1rbi34\\cmTC_f3c85.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_f3c85.dir/intermediate.manifest CMakeFiles\\cmTC_f3c85.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-1rbi34\\cmTC_f3c85.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-2r81ip"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-2r81ip"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-2r81ip
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_b2831\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_b2831.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_b2831.dir\\build
+        Building C object CMakeFiles/cmTC_b2831.dir/testCCompiler.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_b2831.dir\\testCCompiler.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-2r81ip" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nm68B9.tmp
+        testCCompiler.c
+        Linking C executable cmTC_b2831.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_b2831.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_b2831.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nm69C4.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_b2831.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_b2831.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_b2831.dir/manifest.res CMakeFiles\\cmTC_b2831.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_b2831.dir\\objects1.rsp /out:cmTC_b2831.exe /implib:cmTC_b2831.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-2r81ip\\cmTC_b2831.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b2831.dir/intermediate.manifest CMakeFiles\\cmTC_b2831.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_b2831.dir\\objects1.rsp /out:cmTC_b2831.exe /implib:cmTC_b2831.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-2r81ip\\cmTC_b2831.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b2831.dir/intermediate.manifest CMakeFiles\\cmTC_b2831.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-2r81ip\\cmTC_b2831.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.33.31630.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\pc\\OneDrive - Žilinská univerzita v Žiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-23cvsq"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-23cvsq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-23cvsq
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_a5d45\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_a5d45.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_a5d45.dir\\build
+        Building C object CMakeFiles/cmTC_a5d45.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_a5d45.dir\\CMakeCCompilerABI.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-23cvsq" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nm7B4B.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_a5d45.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a5d45.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_a5d45.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nm7CD1.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_a5d45.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_a5d45.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_a5d45.dir/manifest.res CMakeFiles\\cmTC_a5d45.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_a5d45.dir\\objects1.rsp /out:cmTC_a5d45.exe /implib:cmTC_a5d45.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-23cvsq\\cmTC_a5d45.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a5d45.dir/intermediate.manifest CMakeFiles\\cmTC_a5d45.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_a5d45.dir\\objects1.rsp /out:cmTC_a5d45.exe /implib:cmTC_a5d45.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-23cvsq\\cmTC_a5d45.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a5d45.dir/intermediate.manifest CMakeFiles\\cmTC_a5d45.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-23cvsq\\cmTC_a5d45.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-dkku04"
+      binary: "C:/Users/pc/OneDrive - \u017dilinsk\u00e1 univerzita v \u017diline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-dkku04"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/pc/OneDrive - Žilinská univerzita v Žiline/Documents/GitHub/Semestralka/cmake-build-visual-studio/CMakeFiles/CMakeScratch/TryCompile-dkku04
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_a01c5\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_a01c5.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_a01c5.dir\\build
+        Building C object CMakeFiles/cmTC_a01c5.dir/testCCompiler.c.obj
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_a01c5.dir\\testCCompiler.c.obj.d --working-dir="C:\\Users\\pc\\OneDrive - Äilinskß univerzita v Äiline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-dkku04" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\pc\\AppData\\Local\\Temp\\nm7DDB.tmp
+        testCCompiler.c
+        Linking C executable cmTC_a01c5.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a01c5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_a01c5.dir\\objects1.rsp @C:\\Users\\pc\\AppData\\Local\\Temp\\nm7E48.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_a01c5.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_a01c5.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_a01c5.dir/manifest.res CMakeFiles\\cmTC_a01c5.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_a01c5.dir\\objects1.rsp /out:cmTC_a01c5.exe /implib:cmTC_a01c5.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-dkku04\\cmTC_a01c5.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a01c5.dir/intermediate.manifest CMakeFiles\\cmTC_a01c5.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_a01c5.dir\\objects1.rsp /out:cmTC_a01c5.exe /implib:cmTC_a01c5.lib /pdb:C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-dkku04\\cmTC_a01c5.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a01c5.dir/intermediate.manifest CMakeFiles\\cmTC_a01c5.dir/manifest.res" failed (exit code 1201) with the following output:
+        LINK : fatal error LNK1201: error writing to program database 'C:\\Users\\pc\\OneDrive - ?ilinsk? univerzita v ?iline\\Documents\\GitHub\\Semestralka\\cmake-build-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-dkku04\\cmTC_a01c5.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+        NMAKE : fatal error U1077: '"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+...
