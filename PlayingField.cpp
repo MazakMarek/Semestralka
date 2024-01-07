@@ -63,6 +63,10 @@ public:
         return smer1;
     }
 
+    char getSmer2(){
+        return smer2;
+    }
+
     void setSmer1(char posun) {
         smer1 = posun;
     }

@@ -11,7 +11,7 @@
 #include <thread>
 #include <mutex>
 
-void sendData(SOCKET sock, bool pHraBezi, Server *pServer, PlayingField *pPlayingField, std::mutex *mut) {
+void sendData(SOCKET sock,SOCKET sockHrac2 ,bool pHraBezi, Server *pServer, PlayingField *pPlayingField, std::mutex *mut) {
     bool hraBezi = pHraBezi;
     const int intervalInSeconds = 2;
     clock_t lastExecutionTime = clock();
@@ -26,7 +26,6 @@ void sendData(SOCKET sock, bool pHraBezi, Server *pServer, PlayingField *pPlayin
             mut->lock();
             std::cout << "Sending map." << std::endl;
             lastExecutionTime = currentTime;
-           // std::cout << pPlayingField.getSmer1();
 
             pPlayingField->posunHada1();
             if(!pPlayingField->getGameEndHrac1()){
@@ -42,35 +41,26 @@ void sendData(SOCKET sock, bool pHraBezi, Server *pServer, PlayingField *pPlayin
             pPlayingField->makeField();
             mut->unlock();
             pServer->sendMap(sock,pPlayingField->printBoard());
-            std::cout << pPlayingField->printBoard();
-//              server.sendMap(clientSocketPlayer2,playingField.printBoard());
-
+            pServer->sendMap(sockHrac2,pPlayingField->printBoard());
+            // vypis hracej plochy v serverovej casti
+            //            std::cout << pPlayingField->printBoard();
         }
-
     }
-
-
 }
 
 void receiveData(SOCKET sock, bool pHraBezi, Server *pServer, PlayingField *pPlayingField, int pNumOfPlayers, std::mutex *mut) {
 
     while(pHraBezi){
 
-
         std::string responsePlayer1 = pServer->handleClient(sock);
-        std::cout << responsePlayer1 << std::endl;
-        std::cout << pPlayingField->getSmer1() << std::endl;
-        std::cout << ('w' == responsePlayer1[0]) << std::endl;
 
-        //std::string responsePlayer2 = server.handleClient(clientSocketPlayer2);
         mut->lock();
+
         // ci sa hraci neodpojili/ pocet aktivnych hracov
         if(responsePlayer1.compare("Client disconnected.") == 0){
             pNumOfPlayers--;
         }
-//        if(responsePlayer2.compare("Client disconnected.") == 0){
-//            numOfPlayers--;
-//        }
+
         if(pNumOfPlayers == 0){
             pHraBezi = false;
         }
@@ -79,17 +69,34 @@ void receiveData(SOCKET sock, bool pHraBezi, Server *pServer, PlayingField *pPla
         if(!responsePlayer1.compare("Nothing recievied") == 0){
             pPlayingField->setSmer1(responsePlayer1[0]);
         }
-//        if(!responsePlayer2.compare("Nothing recievied") == 0){
-//            pPlayingField.setSmer2(responsePlayer2[0]);
-//        }
         mut->unlock();
-
     }
-
-
 }
 
+void receiveDataHrac2(SOCKET sock, bool pHraBezi, Server *pServer, PlayingField *pPlayingField, int pNumOfPlayers, std::mutex *mut) {
 
+    while(pHraBezi){
+
+        std::string responsePlayer2 = pServer->handleClient(sock);
+
+        mut->lock();
+        // ci sa hraci neodpojili/ pocet aktivnych hracov
+        if(responsePlayer2.compare("Client disconnected.") == 0){
+            pNumOfPlayers--;
+        }
+
+        if(pNumOfPlayers == 0){
+            pHraBezi = false;
+        }
+
+        // ak nezmenil smer tak ostane prechadzajuci smer pohybu
+        if(!responsePlayer2.compare("Nothing recievied") == 0){
+            pPlayingField->setSmer2(responsePlayer2[0]);
+        }
+
+        mut->unlock();
+    }
+}
 
 int main(int argc, char *argv[]){
     std::mutex mut;
@@ -98,10 +105,10 @@ int main(int argc, char *argv[]){
     PlayingField playingField;
     int numOfPlayers = 0;
     bool hraBezi = true;
+
     //priradenie socketov
     sockaddr_in clientAddress;
     int clientSize = sizeof(clientAddress);
-
 
     SOCKET clientSocketPlayer1 = accept(server.getServerSocket(), (struct sockaddr*)&clientAddress, &clientSize);
     numOfPlayers++;
@@ -110,72 +117,30 @@ int main(int argc, char *argv[]){
         closesocket(server.getServerSocket());
         WSACleanup();
         return EXIT_FAILURE;
+    } else {
+        std::cout << "Pripojenie prijate od hraca 1." << std::endl;
     }
 
+    SOCKET clientSocketPlayer2 = accept(server.getServerSocket(), (struct sockaddr*)&clientAddress, &clientSize);
+    numOfPlayers++;
+    if (clientSocketPlayer2 == INVALID_SOCKET) {
+        std::cerr << "Chyba pri prijimani pripojenia." << std::endl;
+        closesocket(server.getServerSocket());
+        WSACleanup();
+        return EXIT_FAILURE;
+    } else {
+        std::cout << "Pripojenie prijate od hraca 2." << std::endl;
+    }
 
-//    SOCKET clientSocketPlayer2 = accept(server.getServerSocket(), (struct sockaddr*)&clientAddress, &clientSize);
-//    numOfPlayers++;
-//    if (clientSocketPlayer2 == INVALID_SOCKET) {
-//        std::cerr << "Chyba pri prijimani pripojenia." << std::endl;
-//        closesocket(server.getServerSocket());
-//        WSACleanup();
-//        return EXIT_FAILURE;
-//    }
-
-    std::thread senderThread(sendData, clientSocketPlayer1, hraBezi, &server, &playingField, &mut);
+    std::thread senderThread(sendData, clientSocketPlayer1, clientSocketPlayer2, hraBezi, &server, &playingField, &mut);
     std::thread receiverThread(receiveData, clientSocketPlayer1, hraBezi, &server, &playingField, numOfPlayers, &mut);
-
-    std::cout << "Pripojenie prijate od klienta." << std::endl;
-
-
-
-//    while(hraBezi){
-//        std::string responsePlayer1 = server.handleClient(clientSocketPlayer1);
-//        //std::cout << responsePlayer1 << std::endl;
-//
-//        //std::string responsePlayer2 = server.handleClient(clientSocketPlayer2);
-//        // ci sa hraci neodpojili/ pocet aktivnych hracov
-//        if(responsePlayer1.compare("Client disconnected.") == 0){
-//            numOfPlayers--;
-//        }
-////        if(responsePlayer2.compare("Client disconnected.") == 0){
-////            numOfPlayers--;
-////        }
-//        if(numOfPlayers == 0){
-//            hraBezi = false;
-//        }
-//
-//        // ak nezmenil smer tak ostane prechadzajuci smer pohybu
-//        if(!responsePlayer1.compare("Nothing recievied") == 0){
-//            playingField.setSmer1(responsePlayer1[0]);
-//        }
-////        if(!responsePlayer2.compare("Nothing recievied") == 0){
-////            playingField.setSmer2(responsePlayer2[0]);
-////        }
-//
-//        clock_t currentTime = clock();
-//        double elapsedSeconds = static_cast<double>(currentTime - lastExecutionTime) / CLOCKS_PER_SEC;
-//
-//        if (elapsedSeconds >= intervalInSeconds) {
-//            std::cout << "Sending map." << std::endl;
-//            lastExecutionTime = currentTime;
-//            std::cout << playingField.getSmer1();
-//            playingField.posunHada1();
-//            playingField.posunHada2();
-//            playingField.makeField();
-//            server.sendMap(clientSocketPlayer1,playingField.printBoard());
-//            //  server.sendMap(clientSocketPlayer2,playingField.printBoard());
-//        }
-//
-//    }
-//    server.handleClient(clientSocket);
+    std::thread receiverThreadHrac2(receiveDataHrac2, clientSocketPlayer2, hraBezi, &server, &playingField, numOfPlayers, &mut);
 
     senderThread.join();
     receiverThread.join();
+    receiverThreadHrac2.join();
+
     // ukoncenie Winsocketov
     WSACleanup();
     return EXIT_SUCCESS;
-
-
-
 }
