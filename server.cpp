@@ -1,6 +1,3 @@
-//
-// Created by pc on 02/01/2024.
-//
 #include <chrono>
 #include "server.h"
 using namespace std::chrono;
@@ -43,7 +40,6 @@ void Server::startServer(){
         return;
     }
     std::cout << "Server bezi a pocuva na porte " << cisloPortu << std::endl;
-
 }
 
 int Server::getServerSocket() {
@@ -53,10 +49,6 @@ int Server::getServerSocket() {
 
 
 std::string Server::handleClient(SOCKET clientSocket) {
-
-
-    // Set the desired waiting time
-
 
     char buffer[1024];
     int bytesRead;
@@ -71,28 +63,16 @@ std::string Server::handleClient(SOCKET clientSocket) {
             } else {
                 return "Nothing recievied";
             }
-
         }
 
 
         // Print received message
         buffer[bytesRead] = '\0';  // Null-terminate the received data
         return std::string(buffer);
-
-//        // Send a response back to the client
-//        const char *responseMessage = "Hello from the server!";
-//        if (send(clientSocket, responseMessage, strlen(responseMessage), 0) == SOCKET_ERROR) {
-//            std::cerr << "Chyba pri odosielaní odpovede klientovi." << std::endl;
-//        }
-
-
-//     Clean up
-//    closesocket(clientSocket);
 }
 
 void Server::sendMap(SOCKET clientSocket, std::string map) {
     if (send(clientSocket, map.c_str(), map.size(), 0) == SOCKET_ERROR) {
         std::cerr << "Chyba pri odosielaní odpovede klientovi." << std::endl;
     }
-
 }

@@ -1,39 +1,112 @@
 #include "server.h"
-#include "PlayingField.h"
+#include "server.cpp"
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
+#include <iostream>
 #include <winsock2.h>
 #include <ws2tcpip.h>
-#include <chrono>
+#include "PlayingField.cpp"
+#pragma comment (lib, "Ws2_32.lib")
 #include <thread>
+#include <mutex>
 
-#pragma comment(lib, "Ws2_32.lib")
+void sendData(SOCKET sock,SOCKET sockHrac2 ,bool pHraBezi, Server *pServer, PlayingField *pPlayingField, std::mutex *mut) {
+    bool hraBezi = pHraBezi;
+    const int intervalInSeconds = 2;
+    clock_t lastExecutionTime = clock();
 
-void updateGameState(PlayingField& game) {
-    while (game.isGameEnd()) {
-        // Acquire lock before updating the game state
-        game.lockGameState();
+    while(hraBezi){
 
-        // Update the game state
-        game.posunHada1();
-        game.posunHada2();
 
-        // Release lock after updating the game state
-        game.unlockGameState();
+        clock_t currentTime = clock();
+        double elapsedSeconds = static_cast<double>(currentTime - lastExecutionTime) / CLOCKS_PER_SEC;
 
-        // Sleep for a short duration to control the speed of the game
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        if (elapsedSeconds >= intervalInSeconds) {
+            mut->lock();
+            std::cout << "Sending map." << std::endl;
+            lastExecutionTime = currentTime;
+
+            pPlayingField->posunHada1();
+            if(!pPlayingField->getGameEndHrac1()){
+                hraBezi = false;
+                std::cout << "Hrac 2 narazil" << std::endl;  // TODO aby to aj clientovy vypisalo
+            }
+
+            pPlayingField->posunHada2();
+            if(!pPlayingField->getGameEndHrac2()){
+                hraBezi = false;
+                std::cout << "Hrac 1 narazil" << std::endl; // TODO aby to aj clientovy vypisalo
+            }
+            pPlayingField->makeField();
+            mut->unlock();
+            pServer->sendMap(sock,pPlayingField->printBoard());
+            pServer->sendMap(sockHrac2,pPlayingField->printBoard());
+            // vypis hracej plochy v serverovej casti
+            //            std::cout << pPlayingField->printBoard();
+        }
     }
 }
 
-int main(int argc, char* argv[]) {
+void receiveData(SOCKET sock, bool pHraBezi, Server *pServer, PlayingField *pPlayingField, int pNumOfPlayers, std::mutex *mut) {
+
+    while(pHraBezi){
+
+        std::string responsePlayer1 = pServer->handleClient(sock);
+
+        mut->lock();
+
+        // ci sa hraci neodpojili/ pocet aktivnych hracov
+        if(responsePlayer1.compare("Client disconnected.") == 0){
+            pNumOfPlayers--;
+        }
+
+        if(pNumOfPlayers == 0){
+            pHraBezi = false;
+        }
+
+        // ak nezmenil smer tak ostane prechadzajuci smer pohybu
+        if(!responsePlayer1.compare("Nothing recievied") == 0){
+            pPlayingField->setSmer1(responsePlayer1[0]);
+        }
+        mut->unlock();
+    }
+}
+
+void receiveDataHrac2(SOCKET sock, bool pHraBezi, Server *pServer, PlayingField *pPlayingField, int pNumOfPlayers, std::mutex *mut) {
+
+    while(pHraBezi){
+
+        std::string responsePlayer2 = pServer->handleClient(sock);
+
+        mut->lock();
+        // ci sa hraci neodpojili/ pocet aktivnych hracov
+        if(responsePlayer2.compare("Client disconnected.") == 0){
+            pNumOfPlayers--;
+        }
+
+        if(pNumOfPlayers == 0){
+            pHraBezi = false;
+        }
+
+        // ak nezmenil smer tak ostane prechadzajuci smer pohybu
+        if(!responsePlayer2.compare("Nothing recievied") == 0){
+            pPlayingField->setSmer2(responsePlayer2[0]);
+        }
+
+        mut->unlock();
+    }
+}
+
+int main(int argc, char *argv[]){
+    std::mutex mut;
     Server server;
     server.startServer();
     PlayingField playingField;
     int numOfPlayers = 0;
     bool hraBezi = true;
-    // priradenie socketov
+
+    //priradenie socketov
     sockaddr_in clientAddress;
     int clientSize = sizeof(clientAddress);
 
@@ -44,47 +117,30 @@ int main(int argc, char* argv[]) {
         closesocket(server.getServerSocket());
         WSACleanup();
         return EXIT_FAILURE;
+    } else {
+        std::cout << "Pripojenie prijate od hraca 1." << std::endl;
     }
 
-    std::cout << "Pripojenie prijate od klienta." << std::endl;
-
-    const int intervalInSeconds = 2;
-    clock_t lastExecutionTime = clock();
-
-    while (hraBezi) {
-        std::string responsePlayer1 = "w"; //server.handleClient(clientSocketPlayer1);
-        // std::cout << responsePlayer1 << std::endl;
-
-        // std::string responsePlayer2 = server.handleClient(clientSocketPlayer2);
-        // ci sa hraci neodpojili/ pocet aktivnych hracov
-        if (responsePlayer1.compare("Client disconnected.") == 0) {
-            numOfPlayers--;
-        }
-
-        if (numOfPlayers == 0) {
-            hraBezi = false;
-        }
-
-        // ak nezmenil smer tak ostane prechadzajuci smer pohybu
-        if (!responsePlayer1.compare("Nothing recievied") == 0) {
-            playingField.setSmer1(responsePlayer1[0]);
-        }
-
-        clock_t currentTime = clock();
-        double elapsedSeconds = static_cast<double>(currentTime - lastExecutionTime) / CLOCKS_PER_SEC;
-
-        if (elapsedSeconds >= intervalInSeconds) {
-            std::cout << "Sending map." << std::endl;
-            lastExecutionTime = currentTime;
-            std::cout << playingField.getSmer1();
-            updateGameState(playingField);
-            server.sendMap(clientSocketPlayer1, playingField.printBoard());
-            //  server.sendMap(clientSocketPlayer2,playingField.printBoard());
-        }
+    SOCKET clientSocketPlayer2 = accept(server.getServerSocket(), (struct sockaddr*)&clientAddress, &clientSize);
+    numOfPlayers++;
+    if (clientSocketPlayer2 == INVALID_SOCKET) {
+        std::cerr << "Chyba pri prijimani pripojenia." << std::endl;
+        closesocket(server.getServerSocket());
+        WSACleanup();
+        return EXIT_FAILURE;
+    } else {
+        std::cout << "Pripojenie prijate od hraca 2." << std::endl;
     }
+
+    std::thread senderThread(sendData, clientSocketPlayer1, clientSocketPlayer2, hraBezi, &server, &playingField, &mut);
+    std::thread receiverThread(receiveData, clientSocketPlayer1, hraBezi, &server, &playingField, numOfPlayers, &mut);
+    std::thread receiverThreadHrac2(receiveDataHrac2, clientSocketPlayer2, hraBezi, &server, &playingField, numOfPlayers, &mut);
+
+    senderThread.join();
+    receiverThread.join();
+    receiverThreadHrac2.join();
 
     // ukoncenie Winsocketov
-    closesocket(clientSocketPlayer1);
     WSACleanup();
     return EXIT_SUCCESS;
 }

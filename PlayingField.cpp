@@ -1,204 +1,210 @@
-// PlayingField.cpp
-#include "PlayingField.h"
+#include <iostream>
+#include <vector>
+#include <ctime>
+#include <cstdlib>
 
-// Body Class Implementation
+class Body{
+private:
+    int x;
+    int y;
+    char texture;
+public:
+    Body(int x, int y, char texture) : x(x), y(y), texture(texture) {}
 
-Body::Body(int x, int y, char texture) : x(x), y(y), texture(texture) {}
-
-int Body::getX() const {
-    return x;
-}
-
-int Body::getY() const {
-    return y;
-}
-
-void Body::setX(int parX) {
-    x = parX;
-}
-
-void Body::setY(int parY) {
-    y = parY;
-}
-
-// PlayingField Class Implementation
-
-PlayingField::PlayingField() {
-    std::srand(static_cast<unsigned int>(std::time(nullptr)));
-
-    snake1.emplace_back(10, 10, snake1Text);
-    snake2.emplace_back(12, 12, snake2Text);
-
-    makeField();
-}
-
-void PlayingField::makeField() {
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            board[i][j] = ' ';
-        }
+    int getX() {
+        return this->x;
+    }
+    int getY() {
+        return this->y;
     }
 
-    for (int i = 0; i < cols; i++)
-        board[0][i] = '-';
-
-    for (auto &row : board) {
-        row[0] = '|';
-        row[cols - 1] = '|';
+    void setX(int parX) {
+        this->x = parX;
     }
 
-    for (const Body &body : snake1) {
-        board[body.getX()][body.getY()] = snake1Text;
+    void setY(int parY) {
+        this->y = parY;
     }
 
-    for (const Body &body : snake2) {
-        board[body.getX()][body.getY()] = snake2Text;
+
+};
+
+class PlayingField {
+private:
+    bool gameEndHrac1 = true;
+    bool gameEndHrac2 = true;
+
+    std::vector<Body> snake1;
+    std::vector<Body> snake2;
+
+    char smer1 = 'd';
+    char smer2 = 'a';
+
+    char snake1Text = 'o';
+    char snake2Text = 'x';
+
+    static const int rows = 20;
+    static const int cols = 31;
+
+    char board[rows][cols];
+    int fruitX = 10, fruitY = 15;
+
+public:
+
+    bool getGameEndHrac1(){
+        return gameEndHrac1;
     }
 
-    board[fruitX][fruitY] = '#';
-}
-
-void PlayingField::generateRandomFruit() {
-    bool foundSpace = false;
-    while (!foundSpace) {
-        fruitX = 2 + std::rand() % (rows - 2);
-        fruitY = 2 + std::rand() % (cols - 2);
-
-        if (board[fruitX][fruitY] == ' ') {
-            foundSpace = true;
-        }
-    }
-    board[fruitX][fruitY] = '#';
-}
-
-void PlayingField::lockGameState() {
-    mutex.lock();
-}
-
-void PlayingField::unlockGameState() {
-    mutex.unlock();
-}
-
-bool PlayingField::isGameEnd() const {
-    return gameEnd;
-}
-
-void PlayingField::posunHada1() {
-    int smerX = 0;
-    int smerY = 0;
-    switch (smer1) {
-        case 'a':
-            smerY = -1;
-            break;
-        case 'd':
-            smerY = +1;
-            break;
-        case 's':
-            smerX = +1;
-            break;
-        case 'w':
-            smerX = -1;
-            break;
-        default:
-            break;
+    bool getGameEndHrac2(){
+        return gameEndHrac2;
     }
 
-    int predosleX;
-    int predosleY;
-    bool posunPrvy = true;
-    for (Body &body : snake1) {
-        if (posunPrvy) {
-            predosleX = body.getX();
-            predosleY = body.getY();
-            body.setX(predosleX + smerX);
-            body.setY(predosleY + smerY);
-            posunPrvy = false;
-            if (board[body.getX()][body.getY()] != ' ' && board[body.getX()][body.getY()] != '#') {
-                gameEnd = false;
+    char getSmer1(){
+        return smer1;
+    }
+
+    char getSmer2(){
+        return smer2;
+    }
+
+    void setSmer1(char posun) {
+        smer1 = posun;
+    }
+
+    void setSmer2(char posun) {
+        smer2 = posun;
+    }
+
+    PlayingField(){
+        std::srand(static_cast<unsigned int>(std::time(0)));
+
+        snake1.emplace_back(10,10, this->snake1Text);
+        snake2.emplace_back(12,12, this->snake2Text);
+        //generateRandomFruit();
+        this->makeField();
+    }
+
+    void makeField() {
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                board[i][j] = ' ';
             }
-        } else {
-            predosleX = body.getX();
-            predosleY = body.getY();
-            body.setX(predosleX);
-            body.setY(predosleY);
         }
+
+        // Horne steny '-'
+        for (int i = 0; i < cols; i++)
+            board[0][i] = '-';
+
+        for (auto &row : board) {
+            row[0] = '|';
+            row[cols - 1] = '|';
+        }
+
+        // Creating bottom walls with '-'
+        for (int i = 0; i < cols; i++) {
+            board[rows - 1][i] = '-';
+        }
+
+        for (Body body:snake1) { // inicializacia hada1
+            board[body.getX()][body.getY()] = snake1Text;
+        }
+
+        for (Body body:snake2) { // vykreslenie hada2
+            board[body.getX()][body.getY()] = snake2Text;
+        }
+        board[fruitX][fruitY] = '#';
     }
 
-    if (board[snake1.front().getX()][snake1.front().getY()] == '#') {
-        generateRandomFruit();
-    }
-}
-
-void PlayingField::posunHada2() {
-    int smerX = 0;
-    int smerY = 0;
-    switch (smer2) {
-        case 'a':
-            smerY = -1;
-            break;
-        case 'd':
-            smerY = +1;
-            break;
-        case 's':
-            smerX = +1;
-            break;
-        case 'w':
-            smerX = -1;
-            break;
-        default:
-            break;
-    }
-
-    int predosleX;
-    int predosleY;
-    bool posunPrvy = true;
-    for (Body &body : snake2) {
-        if (posunPrvy) {
-            predosleX = body.getX();
-            predosleY = body.getY();
-            body.setX(predosleX + smerX);
-            body.setY(predosleY + smerY);
-            posunPrvy = false;
-            if (board[body.getX()][body.getY()] != ' ') {
-                gameEnd = false;
+    void generateRandomFruit() {
+        bool foundSpace = false;
+        while (!foundSpace) {
+            fruitX = 2 + std::rand() % (rows - 2);
+            fruitY = 2 + std::rand() % (cols - 2);
+            if (board[fruitX][fruitY] == ' ') {
+                foundSpace = true;
             }
-        } else {
-            predosleX = body.getX();
-            predosleY = body.getY();
-            body.setX(predosleX);
-            body.setY(predosleY);
         }
     }
 
-    if (board[snake2.front().getX()][snake2.front().getY()] == '#') {
-        generateRandomFruit();
-    }
-}
-
-std::string PlayingField::printBoard() const {
-    std::string result;
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            result += board[i][j];
-            result += " ";
+    void posunHada2() {
+        int smerX = 0;
+        int smerY = 0;
+        switch (this->smer2) {
+            case 'a': smerY = -1; break;
+            case 'd': smerY = +1; break;
+            case 's': smerX = +1; break;
+            case 'w': smerX = -1; break;
+            default: break;
         }
-        result += "\n";
+
+        int predosleX;
+        int predosleY;
+        bool posunPrvy = true;
+        for (Body& body : this->snake2) {
+            if (posunPrvy) {
+                predosleX = body.getX();
+                predosleY = body.getY();
+                body.setX(predosleX + smerX);
+                body.setY(predosleY + smerY);
+                posunPrvy = false;
+                if (board[body.getX()][body.getY()] != ' ') {
+                    this->gameEndHrac2 = false;
+                }
+            } else {
+                int tempX = body.getX();
+                int tempY = body.getY();
+                body.setX(predosleX);
+                body.setY(predosleY);
+                predosleX = tempX;
+                predosleY = tempY;
+            }
+        }
     }
-    return result;
-}
 
-char PlayingField::getSmer1() {
-    return this->smer1;
-}
+    void posunHada1() {
+        int smerX = 0;
+        int smerY = 0;
+        switch (this->smer1) {
+            case 'a': smerY = -1; break;
+            case 'd': smerY = +1; break;
+            case 's': smerX = +1; break;
+            case 'w': smerX = -1; break;
+            default: break;
+        }
+        int predosleX;
+        int predosleY;
+        bool posunPrvy = true;
+        for (Body& body : this->snake1) {
+            if (posunPrvy) {
+                predosleX = body.getX();
+                predosleY = body.getY();
+                body.setX(predosleX + smerX);
+                body.setY(predosleY + smerY);
+                posunPrvy = false;
+                if (board[body.getX()][body.getY()] != ' ' && board[body.getX()][body.getY()] != '#') {
+                    this->gameEndHrac1 = false;
+                }
+            } else {
+                int tempX = body.getX();
+                int tempY = body.getY();
+                body.setX(predosleX);
+                body.setY(predosleY);
+                predosleX = tempX;
+                predosleY = tempY;
+            }
+        }
+    }
 
-char PlayingField::getSmer2() {
-    return this->smer2;
-}
 
-void PlayingField::setSmer1(char smer) {
-    this->smer1 = smer;
-}
-
-void PlayingField::setSmer2(char smer) {
-    this->smer2 = smer;
-}
+    std::string printBoard() const {
+        std::string result;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                result += board[i][j];
+                result += " ";
+            }
+            result += "\n";
+        }
+        return result;
+    }
+};
