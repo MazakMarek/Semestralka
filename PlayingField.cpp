@@ -140,6 +140,7 @@ public:
         int predosleX;
         int predosleY;
         bool posunPrvy = true;
+        bool zjedolJedlo = false;
         for (Body& body : this->snake2) {
             if (posunPrvy) {
                 predosleX = body.getX();
@@ -147,7 +148,10 @@ public:
                 body.setX(predosleX + smerX);
                 body.setY(predosleY + smerY);
                 posunPrvy = false;
-                if (board[body.getX()][body.getY()] != ' ') {
+                if (board[body.getX()][body.getY()] == '#'){
+                    zjedolJedlo = true;
+                }
+                else if (board[body.getX()][body.getY()] != ' ') {
                     this->gameEndHrac2 = false;
                 }
             } else {
@@ -158,6 +162,10 @@ public:
                 predosleX = tempX;
                 predosleY = tempY;
             }
+        }
+        if (zjedolJedlo) {
+            this->snake2.emplace_back(predosleX, predosleY, snake2Text);
+            this->generateRandomFruit();
         }
     }
 
@@ -174,6 +182,7 @@ public:
         int predosleX;
         int predosleY;
         bool posunPrvy = true;
+        bool zjedolJedlo = false;
         for (Body& body : this->snake1) {
             if (posunPrvy) {
                 predosleX = body.getX();
@@ -181,7 +190,10 @@ public:
                 body.setX(predosleX + smerX);
                 body.setY(predosleY + smerY);
                 posunPrvy = false;
-                if (board[body.getX()][body.getY()] != ' ' && board[body.getX()][body.getY()] != '#') {
+                if (board[body.getX()][body.getY()] == '#'){
+                    zjedolJedlo = true;
+                }
+                else if (board[body.getX()][body.getY()] != ' ') {
                     this->gameEndHrac1 = false;
                 }
             } else {
@@ -192,6 +204,10 @@ public:
                 predosleX = tempX;
                 predosleY = tempY;
             }
+        }
+        if (zjedolJedlo) {
+            this->snake1.emplace_back(predosleX, predosleY, snake1Text);
+            this->generateRandomFruit();
         }
     }
 
