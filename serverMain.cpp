@@ -11,12 +11,11 @@
 #include <thread>
 #include <mutex>
 
-void sendData(SOCKET sock,SOCKET sockHrac2 ,bool pHraBezi, Server *pServer, PlayingField *pPlayingField, std::mutex *mut) {
-    bool hraBezi = pHraBezi;
+void sendData(SOCKET sock,SOCKET sockHrac2 ,bool *pHraBezi, Server *pServer, PlayingField *pPlayingField, std::mutex *mut) {
     const int intervalInSeconds = 2;
     clock_t lastExecutionTime = clock();
 
-    while(hraBezi){
+    while(*pHraBezi){
 
 
         clock_t currentTime = clock();
@@ -29,13 +28,13 @@ void sendData(SOCKET sock,SOCKET sockHrac2 ,bool pHraBezi, Server *pServer, Play
 
             pPlayingField->posunHada1();
             if(!pPlayingField->getGameEndHrac1()){
-                hraBezi = false;
+                *pHraBezi = false;
                 std::cout << "Hrac 2 narazil" << std::endl;  // TODO aby to aj clientovy vypisalo
             }
 
             pPlayingField->posunHada2();
             if(!pPlayingField->getGameEndHrac2()){
-                hraBezi = false;
+                *pHraBezi = false;
                 std::cout << "Hrac 1 narazil" << std::endl; // TODO aby to aj clientovy vypisalo
             }
             pPlayingField->makeField();
@@ -48,22 +47,13 @@ void sendData(SOCKET sock,SOCKET sockHrac2 ,bool pHraBezi, Server *pServer, Play
     }
 }
 
-void receiveData(SOCKET sock, bool pHraBezi, Server *pServer, PlayingField *pPlayingField, int pNumOfPlayers, std::mutex *mut) {
+void receiveData(SOCKET sock, bool *pHraBezi, Server *pServer, PlayingField *pPlayingField, int pNumOfPlayers, std::mutex *mut) {
 
-    while(pHraBezi){
+    while(*pHraBezi){
 
         std::string responsePlayer1 = pServer->handleClient(sock);
 
         mut->lock();
-
-        // ci sa hraci neodpojili/ pocet aktivnych hracov
-        if(responsePlayer1.compare("Client disconnected.") == 0){
-            pNumOfPlayers--;
-        }
-
-        if(pNumOfPlayers == 0){
-            pHraBezi = false;
-        }
 
         // ak nezmenil smer tak ostane prechadzajuci smer pohybu
         if(!responsePlayer1.compare("Nothing recievied") == 0){
@@ -73,21 +63,13 @@ void receiveData(SOCKET sock, bool pHraBezi, Server *pServer, PlayingField *pPla
     }
 }
 
-void receiveDataHrac2(SOCKET sock, bool pHraBezi, Server *pServer, PlayingField *pPlayingField, int pNumOfPlayers, std::mutex *mut) {
+void receiveDataHrac2(SOCKET sock, bool *pHraBezi, Server *pServer, PlayingField *pPlayingField, int pNumOfPlayers, std::mutex *mut) {
 
-    while(pHraBezi){
+    while(*pHraBezi){
 
         std::string responsePlayer2 = pServer->handleClient(sock);
 
         mut->lock();
-        // ci sa hraci neodpojili/ pocet aktivnych hracov
-        if(responsePlayer2.compare("Client disconnected.") == 0){
-            pNumOfPlayers--;
-        }
-
-        if(pNumOfPlayers == 0){
-            pHraBezi = false;
-        }
 
         // ak nezmenil smer tak ostane prechadzajuci smer pohybu
         if(!responsePlayer2.compare("Nothing recievied") == 0){
@@ -132,9 +114,9 @@ int main(int argc, char *argv[]){
         std::cout << "Pripojenie prijate od hraca 2." << std::endl;
     }
 
-    std::thread senderThread(sendData, clientSocketPlayer1, clientSocketPlayer2, hraBezi, &server, &playingField, &mut);
-    std::thread receiverThread(receiveData, clientSocketPlayer1, hraBezi, &server, &playingField, numOfPlayers, &mut);
-    std::thread receiverThreadHrac2(receiveDataHrac2, clientSocketPlayer2, hraBezi, &server, &playingField, numOfPlayers, &mut);
+    std::thread senderThread(sendData, clientSocketPlayer1, clientSocketPlayer2, &hraBezi, &server, &playingField, &mut);
+    std::thread receiverThread(receiveData, clientSocketPlayer1, &hraBezi, &server, &playingField, numOfPlayers, &mut);
+    std::thread receiverThreadHrac2(receiveDataHrac2, clientSocketPlayer2, &hraBezi, &server, &playingField, numOfPlayers, &mut);
 
     senderThread.join();
     receiverThread.join();
