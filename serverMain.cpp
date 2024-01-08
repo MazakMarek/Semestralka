@@ -7,10 +7,11 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include "PlayingField.cpp"
-#pragma comment (lib, "Ws2_32.lib")
 #include <thread>
 #include <mutex>
+#pragma comment (lib, "Ws2_32.lib")
 
+// Function to send game data to both players
 void sendData(SOCKET sock,SOCKET sockHrac2 ,bool *pHraBezi, Server *pServer, PlayingField *pPlayingField, std::mutex *mut) {
     const int intervalInSeconds = 2;
     clock_t lastExecutionTime = clock();
@@ -26,16 +27,18 @@ void sendData(SOCKET sock,SOCKET sockHrac2 ,bool *pHraBezi, Server *pServer, Pla
             std::cout << "Sending map." << std::endl;
             lastExecutionTime = currentTime;
 
+            // Move and check collisions for player 1
             pPlayingField->posunHada1();
             if(!pPlayingField->getGameEndHrac1()){
                 *pHraBezi = false;
-                std::cout << "Hrac 2 narazil" << std::endl;  // TODO aby to aj clientovy vypisalo
+                std::cout << "Player 2 crashed" << std::endl;  // TODO aby to aj clientovy vypisalo
             }
 
+            // Move and check collisions for player 2
             pPlayingField->posunHada2();
             if(!pPlayingField->getGameEndHrac2()){
                 *pHraBezi = false;
-                std::cout << "Hrac 1 narazil" << std::endl; // TODO aby to aj clientovy vypisalo
+                std::cout << "Player 1 crashed" << std::endl; // TODO aby to aj clientovy vypisalo
             }
             pPlayingField->makeField();
             mut->unlock();
@@ -47,6 +50,7 @@ void sendData(SOCKET sock,SOCKET sockHrac2 ,bool *pHraBezi, Server *pServer, Pla
     }
 }
 
+// Function to receive input from player 1
 void receiveData(SOCKET sock, bool *pHraBezi, Server *pServer, PlayingField *pPlayingField, int pNumOfPlayers, std::mutex *mut) {
 
     while(*pHraBezi){
@@ -55,7 +59,7 @@ void receiveData(SOCKET sock, bool *pHraBezi, Server *pServer, PlayingField *pPl
 
         mut->lock();
 
-        // ak nezmenil smer tak ostane prechadzajuci smer pohybu
+        // Update player 1 direction if the input is valid
         if(!responsePlayer1.compare("Nothing recievied") == 0){
             pPlayingField->setSmer1(responsePlayer1[0]);
         }
@@ -63,15 +67,16 @@ void receiveData(SOCKET sock, bool *pHraBezi, Server *pServer, PlayingField *pPl
     }
 }
 
+// Function to receive input from player 2
 void receiveDataHrac2(SOCKET sock, bool *pHraBezi, Server *pServer, PlayingField *pPlayingField, int pNumOfPlayers, std::mutex *mut) {
-
     while(*pHraBezi){
 
+        // Receive input from player 2
         std::string responsePlayer2 = pServer->handleClient(sock);
 
         mut->lock();
 
-        // ak nezmenil smer tak ostane prechadzajuci smer pohybu
+        // Update player 2 direction if the input is valid
         if(!responsePlayer2.compare("Nothing recievied") == 0){
             pPlayingField->setSmer2(responsePlayer2[0]);
         }
@@ -80,6 +85,7 @@ void receiveDataHrac2(SOCKET sock, bool *pHraBezi, Server *pServer, PlayingField
     }
 }
 
+//meain
 int main(int argc, char *argv[]){
     std::mutex mut;
     Server server;
@@ -88,36 +94,40 @@ int main(int argc, char *argv[]){
     int numOfPlayers = 0;
     bool hraBezi = true;
 
-    //priradenie socketov
+    // Assigning sockets
     sockaddr_in clientAddress;
     int clientSize = sizeof(clientAddress);
 
+    // Accept connection from player 1
     SOCKET clientSocketPlayer1 = accept(server.getServerSocket(), (struct sockaddr*)&clientAddress, &clientSize);
     numOfPlayers++;
     if (clientSocketPlayer1 == INVALID_SOCKET) {
-        std::cerr << "Chyba pri prijimani pripojenia." << std::endl;
+        std::cerr << "Error accepting player 1 connection" << std::endl;
         closesocket(server.getServerSocket());
         WSACleanup();
         return EXIT_FAILURE;
     } else {
-        std::cout << "Pripojenie prijate od hraca 1." << std::endl;
+        std::cout << "Connection accepted from Player 1" << std::endl;
     }
 
+    // Accept connection from player 2
     SOCKET clientSocketPlayer2 = accept(server.getServerSocket(), (struct sockaddr*)&clientAddress, &clientSize);
     numOfPlayers++;
     if (clientSocketPlayer2 == INVALID_SOCKET) {
-        std::cerr << "Chyba pri prijimani pripojenia." << std::endl;
+        std::cerr << "Error accepting player 1 connection" << std::endl;
         closesocket(server.getServerSocket());
         WSACleanup();
         return EXIT_FAILURE;
     } else {
-        std::cout << "Pripojenie prijate od hraca 2." << std::endl;
+        std::cout << "Connection accepted from player 2" << std::endl;
     }
 
+    // Start threads for sending and receiving data
     std::thread senderThread(sendData, clientSocketPlayer1, clientSocketPlayer2, &hraBezi, &server, &playingField, &mut);
     std::thread receiverThread(receiveData, clientSocketPlayer1, &hraBezi, &server, &playingField, numOfPlayers, &mut);
     std::thread receiverThreadHrac2(receiveDataHrac2, clientSocketPlayer2, &hraBezi, &server, &playingField, numOfPlayers, &mut);
 
+    // Wait for threads to finish
     senderThread.join();
     receiverThread.join();
     receiverThreadHrac2.join();

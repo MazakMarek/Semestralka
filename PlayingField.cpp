@@ -2,89 +2,114 @@
 #include <vector>
 #include <ctime>
 #include <cstdlib>
-
-class Body{
-private:
-    int x;
-    int y;
-    char texture;
-public:
-    Body(int x, int y, char texture) : x(x), y(y), texture(texture) {}
-
-    int getX() {
-        return this->x;
-    }
-    int getY() {
-        return this->y;
-    }
-
-    void setX(int parX) {
-        this->x = parX;
-    }
-
-    void setY(int parY) {
-        this->y = parY;
-    }
+#include "PlayingField.h"
 
 
-};
+Body::Body(int x, int y, char texture) : x(x), y(y), texture(texture) {}
 
-class PlayingField {
-private:
-    bool gameEndHrac1 = true;
-    bool gameEndHrac2 = true;
+int Body::getX() {
+    return this->x;
+}
 
-    std::vector<Body> snake1;
-    std::vector<Body> snake2;
+int Body::getY() {
+    return this->y;
+}
 
-    char smer1 = 'd';
-    char smer2 = 'a';
+void Body::setX(int parX) {
+    this->x = parX;
+}
 
-    char snake1Text = 'o';
-    char snake2Text = 'x';
+void Body::setY(int parY) {
+    this->y = parY;
+}
 
-    static const int rows = 20;
-    static const int cols = 31;
 
-    char board[rows][cols];
-    int fruitX = 10, fruitY = 15;
+PlayingField::PlayingField() {
+    std::srand(static_cast<unsigned int>(std::time(0)));
 
-public:
+    snake1.emplace_back(10, 10, this->snake1Text);
+    snake2.emplace_back(12, 12, this->snake2Text);
 
-    bool getGameEndHrac1(){
+    this->makeField();
+}
+
+    bool PlayingField::getGameEndHrac1() {
         return gameEndHrac1;
     }
 
-    bool getGameEndHrac2(){
+    bool PlayingField::getGameEndHrac2(){
         return gameEndHrac2;
     }
 
-    char getSmer1(){
+    char PlayingField::getSmer1(){
         return smer1;
     }
 
-    char getSmer2(){
+    char PlayingField::getSmer2(){
         return smer2;
     }
 
-    void setSmer1(char posun) {
-        smer1 = posun;
+void PlayingField::setSmer1(char posun) {
+    char tempP = smer1;
+    char vysP = posun;
+    switch (posun) {
+        case 'a':
+            if (tempP == 'd') {
+                vysP = smer1;
+            }
+            break;
+        case 's':
+            if (tempP == 'w') {
+                vysP = smer1;
+            }
+            break;
+        case 'd':
+            if (tempP == 'a') {
+                vysP = smer1;
+            }
+            break;
+        case 'w':
+            if (tempP == 's') {
+                vysP = smer1;
+            }
+            break;
+        default: vysP = smer1;
+            break;
     }
+    smer1 = vysP;
+}
 
-    void setSmer2(char posun) {
-        smer2 = posun;
+void PlayingField::setSmer2(char posun) {
+    char tempP = smer2;
+    char vysP = posun;
+    switch (posun) {
+        case 'a':
+            if (tempP == 'd') {
+                vysP = smer2;
+            }
+            break;
+        case 's':
+            if (tempP == 'w') {
+                vysP = smer2;
+            }
+            break;
+        case 'd':
+            if (tempP == 'a') {
+                vysP = smer2;
+            }
+            break;
+        case 'w':
+            if (tempP == 's') {
+                vysP = smer2;
+            }
+            break;
+        default: vysP = smer2;
+            break;
     }
+    smer2 = vysP;
+}
 
-    PlayingField(){
-        std::srand(static_cast<unsigned int>(std::time(0)));
-
-        snake1.emplace_back(10,10, this->snake1Text);
-        snake2.emplace_back(12,12, this->snake2Text);
-        //generateRandomFruit();
-        this->makeField();
-    }
-
-    void makeField() {
+    void PlayingField::makeField() {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 board[i][j] = ' ';
@@ -115,7 +140,7 @@ public:
         board[fruitX][fruitY] = '#';
     }
 
-    void generateRandomFruit() {
+    void PlayingField::generateRandomFruit() {
         bool foundSpace = false;
         while (!foundSpace) {
             fruitX = 2 + std::rand() % (rows - 2);
@@ -126,7 +151,7 @@ public:
         }
     }
 
-    void posunHada2() {
+    void PlayingField::posunHada2() {
         int smerX = 0;
         int smerY = 0;
         switch (this->smer2) {
@@ -169,7 +194,7 @@ public:
         }
     }
 
-    void posunHada1() {
+    void PlayingField::posunHada1() {
         int smerX = 0;
         int smerY = 0;
         switch (this->smer1) {
@@ -212,7 +237,7 @@ public:
     }
 
 
-    std::string printBoard() const {
+    std::string PlayingField::printBoard() const {
         std::string result;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
@@ -223,4 +248,3 @@ public:
         }
         return result;
     }
-};
