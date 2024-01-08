@@ -31,14 +31,14 @@ void sendData(SOCKET sock,SOCKET sockHrac2 ,bool *pHraBezi, Server *pServer, Pla
             pPlayingField->posunHada1();
             if(!pPlayingField->getGameEndHrac1()){
                 *pHraBezi = false;
-                std::cout << "Player 2 crashed" << std::endl;  // TODO aby to aj clientovy vypisalo
+                std::cout << "Player 2 crashed" << std::endl;
             }
 
             // Move and check collisions for player 2
             pPlayingField->posunHada2();
             if(!pPlayingField->getGameEndHrac2()){
                 *pHraBezi = false;
-                std::cout << "Player 1 crashed" << std::endl; // TODO aby to aj clientovy vypisalo
+                std::cout << "Player 1 crashed" << std::endl;
             }
             pPlayingField->makeField();
             mut->unlock();

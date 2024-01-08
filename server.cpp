@@ -61,7 +61,7 @@ std::string Server::handleClient(SOCKET clientSocket) {
 
         if (bytesRead <= 0) {
             if (bytesRead == 0) {
-                return "Client disconnected."; // TODO prerobit to ku vsetkym vypisom
+                return "Client disconnected.";
 
             } else {
                 return "Nothing recievied";
